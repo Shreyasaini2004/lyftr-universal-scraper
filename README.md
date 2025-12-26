@@ -16,7 +16,7 @@ The system accepts a website URL, scrapes both static and JavaScript-rendered co
 
 ---
 
-### Linux / macOS
+### Linux / macOS / Windows
 
 ```bash
 chmod +x run.sh
@@ -38,7 +38,7 @@ cd ..
 
 python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000
 
-Environment Details
+### Environment Details
 
 Backend: FastAPI served using uvicorn
 
@@ -63,7 +63,7 @@ Builds the frontend
 Starts the FastAPI server
 
 
-API Endpoints
+### API Endpoints
 Health Check
 GET /healthz
 
@@ -73,7 +73,8 @@ Response:
 {
   "status": "ok"
 }
-Scrape Website
+
+### Scrape Website
 POST /scrape
 
 
@@ -114,7 +115,7 @@ JSON viewer for each section
 
 “Download JSON” button
 
-Primary URLs Used for Testing
+### Primary URLs Used for Testing
 
 https://en.wikipedia.org/wiki/Artificial_intelligence
 
